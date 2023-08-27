@@ -1,1 +1,28 @@
-#WIN API FOR GAME DEVELOPERS 
+# WIN API FOR GAME DEVELOPERS 
+
+---
+
+Table of content
+
+- [x] day 0 - Getting used to WIN API
+- [ ] day 1 - Input + Key logger
+- [ ] day 2 - Manipulating the console
+
+- 
+
+- [ ] Manipulating windows
+- [ ] Opening files
+- [ ] Making a screen melter
+
+-
+
+- [ ] Opening a window
+- [ ] Getting the window input
+- [ ] Drawing with pixels
+- [ ] Drawing with OpenGL
+- [ ] Creating a modern OpenGL context
+- [ ] Finishing the window code
+
+-
+
+- [ ] DLL injection
