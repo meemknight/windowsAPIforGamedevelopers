@@ -7,9 +7,12 @@ Table of content
 - [x] day 0 - Getting used to WIN API
 - [ ] day 1 - Input + Key logger
 - [ ] day 2 - Manipulating the console
+- [ ] day 3 - Errors
 
 - 
 
+- [ ] Mem mapping
+- [ ] Allocating memory
 - [ ] Manipulating windows
 - [ ] Opening files
 - [ ] Making a screen melter
