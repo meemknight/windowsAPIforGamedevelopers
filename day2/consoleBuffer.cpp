@@ -16,6 +16,8 @@ int main()
 	}else
 	{
 		//version 2
+		//This handle has to be closed with closeHandle(); if you don't want to leak memory.
+		//I'm not closing it now because it will be used for the entire continuation of the program.
 
 		HANDLE consolebuffer = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, nullptr, 
 			CONSOLE_TEXTMODE_BUFFER, 0);
@@ -29,3 +31,5 @@ int main()
 	return 0;
 
 }
+
+

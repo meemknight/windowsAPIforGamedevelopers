@@ -3,12 +3,13 @@
 
 int main()
 {
+	
 	HANDLE stdHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 
 	SetConsoleTextAttribute(stdHandle, 0x0C);
 	std::cout << "This is an error message\n";
 
-	SetConsoleTextAttribute(stdHandle, 0x0f);
+	SetConsoleTextAttribute(stdHandle, 0x0F);
 	std::cout << "Back to normal\n";
 
 	//no need to call CloseHandle for GetStdHandle;

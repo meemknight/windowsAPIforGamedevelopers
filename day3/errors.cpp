@@ -31,7 +31,7 @@ std::string getLastErrorAsString()
 {
 	DWORD err = GetLastError();
 
-	if (!err) { return ""; } //no wrror
+	if (!err) { return ""; } //no error
 
 
 	char *message = 0;
