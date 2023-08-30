@@ -2,6 +2,32 @@
 
 ---
 
+<h2>If you have never used CMake before:</h2>
+
+<p>Opening the Solution:</p> 
+
+<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge1.gif" width="350">
+
+Or
+
+<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge2.gif" width="500">
+
+<p>Running the code:</p>
+
+Go to CMakeLists.txt, <kbd>CTRL + S</kbd>
+
+<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge3.gif" width="200">
+
+Than <kbd>Ctrl + F5</kbd> to compile and run.
+
+<br/>
+
+<p>Refreshing your changes:<br>
+Close Visual Studio (if needed), delete the out folder, reopen VS, <kbd>CTRL + S</kbd> on CMakeLists.txt</p>
+
+
+
+---
 Table of content
 
 - [x] [day 0](https://youtu.be/qOgGn1ihyGo) - Getting used to WIN API

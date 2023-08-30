@@ -8,3 +8,5 @@ add_executable(console "console.cpp")
 
 add_executable(consoleBuffer "consoleBuffer.cpp")
 
+add_executable(winmainconsole "winmainconsole.cpp")
+set_target_properties(winmainconsole PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
