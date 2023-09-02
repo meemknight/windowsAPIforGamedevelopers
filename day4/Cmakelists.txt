@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(day3)
+project(day4)
 set(CMAKE_CXX_STANDARD 17)
-add_executable(errors "errors.cpp")
+add_executable(dialogBox "day4.cpp")
+remove_definitions(-DUNICODE) #remove unicode

@@ -31,11 +31,11 @@ Close Visual Studio (if needed), delete the out folder, reopen VS, <kbd>CTRL + S
 Table of content
 
 - [x] [day 0](https://youtu.be/qOgGn1ihyGo) - Getting used to WIN API
-- [ ] day 1 - Input + Key logger + winmain
+- [x] [day 1](https://youtu.be/n1SzitnRzY4) - Input + Key logger + winmain
 - [ ] day 2 - Manipulating the console
 - [ ] day 3 - Errors
-- [ ] day 4 - Reading writing files
-- [ ] day 5 - Opening a file dialogue
+- [ ] day 4 - Opening a file dialogue
+- [ ] day 5 - Reading writing files
 - [ ] day 6 - Mem mapping
 - [ ] day 7 - Allocating memory
 - [ ] day 8 - Manipulating windows
