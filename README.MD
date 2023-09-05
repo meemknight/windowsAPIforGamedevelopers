@@ -32,14 +32,14 @@ Table of content
 
 - [x] [day 0](https://youtu.be/qOgGn1ihyGo) - Getting used to WIN API
 - [x] [day 1](https://youtu.be/n1SzitnRzY4) - Input + Key logger + winmain
-- [ ] day 2 - Manipulating the console
+- [x] [day 2](https://youtu.be/UYTkjicnFOI) - Manipulating the console
 - [ ] day 3 - Errors
 - [ ] day 4 - Opening a file dialogue
 - [ ] day 5 - Reading writing files
 - [ ] day 6 - Mem mapping
 - [ ] day 7 - Allocating memory
-- [ ] day 8 - Manipulating windows
-
+- [ ] day 8 - Loading a DLL
+- [ ] day 9 - Manipulating windows
 
 
 -
