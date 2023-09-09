@@ -9,8 +9,9 @@ struct Test
 	int b = 0;
 };
 
+
 size_t getFileSize(std::string name);
-bool readEntireFile(std::string name, std::vector<unsigned char> &data);
+bool readEntireFileBinary(std::string name, std::vector<unsigned char> &data);
 bool writeEntireFileBinary(std::string_view name, void *buffer, size_t s);
 
 int main()
@@ -26,7 +27,7 @@ int main()
 	t = {};
 
 	std::vector<unsigned char> data;
-	readEntireFile(FILE_PATH "test.bin", data);
+	readEntireFileBinary(FILE_PATH "test.bin", data);
 	
 	if(sizeof(t) == data.size())
 		std::memcpy(&t, data.data(), sizeof(t));
@@ -59,7 +60,7 @@ size_t getFileSize(std::string name)
 	return fileSize.QuadPart;
 }
 
-bool readEntireFile(std::string name, std::vector<unsigned char> &data)
+bool readEntireFileBinary(std::string name, std::vector<unsigned char> &data)
 {
 
 	data.clear();
