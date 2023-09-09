@@ -1,12 +1,38 @@
 #include <Windows.h>
 #include <string>
 #include <vector>
+#include <iostream>
+
+struct Test
+{
+	float a = 0;
+	int b = 0;
+};
+
+size_t getFileSize(std::string name);
+bool readEntireFile(std::string name, std::vector<unsigned char> &data);
+bool writeEntireFileBinary(std::string_view name, void *buffer, size_t s);
 
 int main()
 {
 	
-	
+	Test t;
+	t.a = 10.8;
+	t.b = 5;
 
+	//FILE_PATH macro is defined from cmake and it is an absolute path, used for convinience
+	writeEntireFileBinary(FILE_PATH "test.bin", &t, sizeof(t));
+
+	t = {};
+
+	std::vector<unsigned char> data;
+	readEntireFile(FILE_PATH "test.bin", data);
+	
+	if(sizeof(t) == data.size())
+		std::memcpy(&t, data.data(), sizeof(t));
+	
+	std::cout << t.a << " " << t.b << "  file size bytes: " << getFileSize(FILE_PATH "test.bin");
+	std::cin.get();
 	return 0;
 }	
 
@@ -71,7 +97,6 @@ bool readEntireFile(std::string name, std::vector<unsigned char> &data)
 	}
 
 }
-
 
 bool writeEntireFileBinary(std::string_view name, void *buffer, size_t s)
 {
