@@ -33,7 +33,7 @@ Table of content
 - [x] [day 0](https://youtu.be/qOgGn1ihyGo) - Getting used to WIN API
 - [x] [day 1](https://youtu.be/n1SzitnRzY4) - Input + Key logger + winmain
 - [x] [day 2](https://youtu.be/UYTkjicnFOI) - Manipulating the console
-- [ ] day 3 - Errors
+- [x] [day 3](https://youtu.be/GFItrTJr8RA) - Errors
 - [ ] day 4 - Opening a file dialogue
 - [ ] day 5 - Reading writing files
 - [ ] day 6 - Mem mapping
