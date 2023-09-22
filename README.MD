@@ -34,12 +34,13 @@ Table of content
 - [x] [day 1](https://youtu.be/n1SzitnRzY4) - Input + Key logger + winmain
 - [x] [day 2](https://youtu.be/UYTkjicnFOI) - Manipulating the console
 - [x] [day 3](https://youtu.be/GFItrTJr8RA) - Errors
-- [ ] day 4 - Opening a file dialogue
-- [ ] day 5 - Reading writing files
+- [x] [day 4](https://youtu.be/XDCWXE3-wsk) - Opening a file dialogue
+- [x] [day 5](https://youtu.be/Eo8sQfJpQy8) - Reading writing files
 - [ ] day 6 - Mem mapping
-- [ ] day 7 - Allocating memory
-- [ ] day 8 - Loading a DLL
-- [ ] day 9 - Manipulating windows
+- [ ] day 7 - Read Process Memory
+- [ ] day 8 - Allocating memory + pages
+- [ ] day 9 - Loading a DLL
+- [ ] day 10 - Manipulating windows
 
 
 -
