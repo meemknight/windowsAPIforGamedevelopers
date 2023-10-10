@@ -2,6 +2,10 @@
 
 ---
 
+A YouTube tutorial series meant to introduce you to the windows and get you to the point where you can write an entire game using no libraries!
+
+---
+
 <h2>If you have never used CMake before:</h2>
 
 <p>Opening the Solution:</p> 
