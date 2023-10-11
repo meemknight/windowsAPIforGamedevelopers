@@ -40,7 +40,7 @@ Table of content
 - [x] [day 3](https://youtu.be/GFItrTJr8RA) - Errors
 - [x] [day 4](https://youtu.be/XDCWXE3-wsk) - Opening a file dialogue
 - [x] [day 5](https://youtu.be/Eo8sQfJpQy8) - Reading writing files
-- [ ] day 6 - Mem mapping
+- [x] [day 6](https://youtu.be/jys9PDR-hwM) - Mem mapping
 - [ ] day 7 - Allocating memory + pages
 - [ ] day 8 - Read Process Memory
 - [ ] day 9 - Loading a DLL
