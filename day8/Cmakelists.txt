@@ -4,9 +4,10 @@ project(day8)
 set(CMAKE_CXX_STANDARD 17)
 add_executable(victim "victim.cpp")
 remove_definitions(-DUNICODE) #remove unicode
-add_compile_definitions(FILE_PATH="${CMAKE_CURRENT_SOURCE_DIR}/")  #
 
 
 add_executable(hacker "hacker.cpp")
 remove_definitions(-DUNICODE) #remove unicode
-add_compile_definitions(FILE_PATH="${CMAKE_CURRENT_SOURCE_DIR}/")  #
+
+add_executable(virtualScanner "virtualScanner.cpp")
+remove_definitions(-DUNICODE) #remove unicode
