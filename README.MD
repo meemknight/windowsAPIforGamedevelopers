@@ -43,7 +43,7 @@ Table of content
 - [x] [day 6](https://youtu.be/jys9PDR-hwM) - Mem mapping
 - [x] [day 7](https://youtu.be/ob2AphemlwY) - Allocating memory + pages
 - [x] [day 8](https://youtu.be/JjoRNM3QvlM) - Read Process Memory
-- [ ] day 9 - Loading a DLL
+- [x] [day 9](https://youtu.be/eLSpda2f28c) - Loading a DLL
 - [ ] day 10 - Manipulating windows
 
 

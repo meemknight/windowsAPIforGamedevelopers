@@ -6,7 +6,7 @@
 int main()
 {
 	
-	HMODULE dll = LoadLibraryA("dll.dll");
+	HMODULE dll = LoadLibraryA("dllProject.dll");
 
 	if (dll)
 	{

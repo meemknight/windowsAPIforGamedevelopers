@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include <iostream>
 #include <common.h>
-
+#include <iostream>
 
 extern "C" __declspec(dllexport) void foo()
 {
@@ -26,7 +26,7 @@ BOOL WINAPI DllMain(
 
 	case DLL_THREAD_ATTACH:
 	// Do thread-specific initialization. (called when the process creates a new thread)
-	//	and made in the context of the new thread. This allows the runtime to create the Thread Local Storage stuff.
+	//	and made in the context of the new thread.
 	break;
 
 	case DLL_THREAD_DETACH:

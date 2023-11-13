@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(day8)
+project(day9)
 
 
 set(CMAKE_CXX_STANDARD 17)
@@ -11,3 +11,5 @@ target_include_directories(main PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/") #add head
 add_library(dllProject SHARED "dll.cpp")
 remove_definitions(-DUNICODE) #remove unicode
 target_include_directories(dllProject PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/") #add header file
+
+
