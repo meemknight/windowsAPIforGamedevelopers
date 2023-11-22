@@ -44,7 +44,7 @@ Table of content
 - [x] [day 7](https://youtu.be/ob2AphemlwY) - Allocating memory + pages
 - [x] [day 8](https://youtu.be/JjoRNM3QvlM) - Read Process Memory
 - [x] [day 9](https://youtu.be/eLSpda2f28c) - Loading a DLL
-- [ ] day 10 - Manipulating windows
+- [x] [day 10](https://youtu.be/tASfx1C0hE8) - Manipulating windows
 
 
 -

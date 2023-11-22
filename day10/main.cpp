@@ -16,7 +16,7 @@ void createTheWindow()
 {
 	std::thread t(threadFunction);
 	t.detach();
-	Sleep(32);
+	Sleep(32); //wait some time for the thread and the window to open.
 }
 
 
@@ -28,7 +28,6 @@ int main()
 	HWND wind = FindWindow(0, "title");
 	std::cout << wind << "\n";
 
-	
 
 	while (true)
 	{
@@ -76,7 +75,7 @@ int main()
 				" widnow height: " << r.bottom - r.top << '\n';
 		}
 
-	
+		//set window pos
 		if (GetAsyncKeyState('R') & 1)
 		{
 			std::cout << "Pressed R\n";
@@ -84,6 +83,7 @@ int main()
 			SetWindowPos(wind, 0, 100, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 		}
 
+		//set window size
 		if (GetAsyncKeyState('T') & 1)
 		{
 			std::cout << "Pressed T\n";
@@ -91,12 +91,14 @@ int main()
 			SetWindowPos(wind, 0, 0, 0, 300, 300, SWP_NOMOVE | SWP_NOZORDER);
 		}
 
+		//set window on top
 		if (GetAsyncKeyState('Y') & 1)
 		{
 			std::cout << "Pressed Y\n";
 			SetWindowPos(wind, HWND_TOP, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 		}
 
+		//set window as topmost
 		if (GetAsyncKeyState('U') & 1)
 		{
 			std::cout << "Pressed U\n";
