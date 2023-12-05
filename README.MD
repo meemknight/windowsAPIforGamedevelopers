@@ -34,6 +34,8 @@ Close Visual Studio (if needed), delete the out folder, reopen VS, <kbd>CTRL + S
 ---
 Table of content
 
+- [x] [PART 1](https://youtu.be/ZX0aGujHOfg) - Introduction
+
 - [x] [day 0](https://youtu.be/qOgGn1ihyGo) - Getting used to WIN API
 - [x] [day 1](https://youtu.be/n1SzitnRzY4) - Input + Key logger + winmain
 - [x] [day 2](https://youtu.be/UYTkjicnFOI) - Manipulating the console
@@ -49,15 +51,28 @@ Table of content
 
 -
 
+- [ ] PART 2 - Making our own Window!
+
 - [ ] Opening a window
 - [ ] Getting the window input
+- [ ] Separating the window code from the gameplay code.
 - [ ] Drawing with pixels
+- [ ] DeltaTime
+- [ ] Various improvements and fixes
 - [ ] Drawing with OpenGL
 - [ ] Creating a modern OpenGL context
+- [ ] Vsynk (Propperly implemented)
 - [ ] Finishing the window code
-- [ ] Making a screen melter
+
 
 -
 
+- [ ] Making a screen melter
 - [ ] Xinput
 - [ ] DLL injection
+
+
+
+
+
+
