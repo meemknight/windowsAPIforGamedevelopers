@@ -53,7 +53,7 @@ Table of content
 
 - [ ] PART 2 - Making our own Window!
 
-- [ ] Opening a window
+- [x] [day 11](https://youtu.be/zsypxgOw47Q) - Opening a window
 - [ ] Getting the window input
 - [ ] Separating the window code from the gameplay code.
 - [ ] Drawing with pixels
@@ -67,6 +67,7 @@ Table of content
 
 -
 
+- [ ] Add imgui to the window
 - [ ] Making a screen melter
 - [ ] Xinput
 - [ ] DLL injection
