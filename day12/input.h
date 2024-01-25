@@ -29,7 +29,7 @@ struct Button
 		Comma_LeftArrow,
 		SemiColon,
 		Question_BackSlash,
-		Tilde, //next line
+		Tilde,
 		Quotes,
 		Slash,
 		SquareBracketsOpen,
