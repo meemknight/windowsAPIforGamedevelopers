@@ -1,5 +1,4 @@
 #include <iostream>
-#include <thread>
 #include <Windows.h>
 #include <input.h>
 
@@ -126,7 +125,6 @@ int main()
 		//
 
 
-
 		processInputAfter(windowStuff.input);
 
 	}
@@ -135,6 +133,3 @@ int main()
 
 	return 0;
 }
-
-
-

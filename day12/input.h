@@ -37,7 +37,6 @@ struct Button
 		BUTTONS_COUNT, //
 	};
 
-	//todo add mouse buttons here todo also add alt was pressed function
 	static constexpr int buttonValues[BUTTONS_COUNT] =
 	{
 		'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
