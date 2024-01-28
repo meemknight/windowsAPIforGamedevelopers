@@ -54,7 +54,7 @@ Table of content
 - [ ] PART 2 - Making our own Window!
 
 - [x] [day 11](https://youtu.be/zsypxgOw47Q) - Opening a window
-- [ ] Window input part 1
+- [x] [day 12](https://youtu.be/aSDbKwrOC90) - Window input part 1
 - [ ] Window input part 2
 - [ ] Separating the window code from the gameplay code (project structure).
 - [ ] Drawing with pixels
