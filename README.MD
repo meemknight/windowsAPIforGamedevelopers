@@ -2,7 +2,7 @@
 
 ---
 
-A [YouTube](https://www.youtube.com/playlist?list=PLKUl_fMWLdH8Kk4iFnWHhU43xXG2t6bjf) tutorial series meant to introduce you to the windows and get you to the point where you can write an entire game using no libraries!
+A [YouTube](https://www.youtube.com/playlist?list=PLKUl_fMWLdH8Kk4iFnWHhU43xXG2t6bjf) tutorial series meant to introduce you to the Windows API and get you to the point where you can write an entire game using no libraries!
 
 ---
 
