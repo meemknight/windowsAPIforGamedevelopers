@@ -1,6 +1,8 @@
 #include <iostream>
 #include <Windows.h>
 #include <input.h>
+#include <gameLogic.h>
+#include <chrono>
 
 struct WindowStuff
 {
@@ -125,17 +127,37 @@ int main()
 
 #pragma endregion
 
+	initGameplay();
+
+	auto stop = std::chrono::high_resolution_clock::now();
 
 	while (windowStuff.running)
 	{
-		
+
+	#pragma region deltaTime
+
+		//long newTime = clock();
+		//float deltaTime = (float)(newTime - lastTime) / CLOCKS_PER_SEC;
+		//lastTime = clock();
+		auto start = std::chrono::high_resolution_clock::now();
+
+		float deltaTime = (std::chrono::duration_cast<std::chrono::microseconds>(start - stop)).count() / 1000000.0f;
+		stop = std::chrono::high_resolution_clock::now();
+
+		//we don't want delta time to drop too low, like let's say under 5 fps. you can set this to whatever you want
+		//or remove it but I recomand keeping it
+		float augmentedDeltaTime = deltaTime;
+		if (augmentedDeltaTime > 1.f / 5) { augmentedDeltaTime = 1.f / 5; }
+
+	#pragma endregion
+
 	#pragma region get messages
 		MSG msg = {};
 		while (PeekMessage(&msg, wind, 0, 0, PM_REMOVE) > 0) //remove all mesages from queue
 		{
 			TranslateMessage(&msg);
 			DispatchMessage(&msg); //call our window callback
-		
+
 		}
 	#pragma endregion
 
@@ -166,7 +188,7 @@ int main()
 				shiftWasPressed = !shiftWasPressed;
 			}
 
-			for (int i = 0; i < sizeof(windowStuff.input.typedInput)-1; i++)
+			for (int i = 0; i < sizeof(windowStuff.input.typedInput) - 1; i++)
 			{
 				char &c = windowStuff.input.typedInput[i];
 				if (c == 0) { break; }
@@ -185,14 +207,15 @@ int main()
 				else if (c > 0 && std::isdigit(c))
 				{
 
-				}else
+				}
+				else
 				{
-					char codes[] = {VK_SPACE, VK_RETURN, VK_BACK, 
+					char codes[] = {VK_SPACE, VK_RETURN, VK_BACK,
 								VK_OEM_PLUS, VK_OEM_PERIOD, VK_OEM_MINUS,
 							VK_OEM_COMMA, VK_OEM_1, VK_OEM_2, VK_OEM_3,
 								VK_OEM_7, VK_OEM_5, VK_OEM_4, VK_OEM_6};
 
-					char chars[] = {' ', '\n', '\b', '+', '.', '-', ',', ';', '/', '`', 
+					char chars[] = {' ', '\n', '\b', '+', '.', '-', ',', ';', '/', '`',
 						'\'', '\\', '[', ']'};
 
 					static_assert(sizeof(codes) == sizeof(chars));
@@ -200,7 +223,7 @@ int main()
 					bool found = false;
 					for (int j = 0; j < sizeof(chars); j++)
 					{
-						if (c == codes[j]) 
+						if (c == codes[j])
 						{
 							c = chars[j];
 							found = true;
@@ -210,7 +233,7 @@ int main()
 					if (!found)
 					{
 						//remove this character completely from the array
-						for (int j = i; i < sizeof(windowStuff.input.typedInput)-1; i++)
+						for (int j = i; i < sizeof(windowStuff.input.typedInput) - 1; i++)
 						{
 							windowStuff.input.typedInput[j] = windowStuff.input.typedInput[j + 1];
 						}
@@ -224,39 +247,21 @@ int main()
 
 	#pragma endregion
 
+		RECT rect = {};
+		GetWindowRect(wind, &rect);
+		int width = rect.right - rect.left;
+		int height = rect.bottom - rect.top;
 
-		
-		//game code and other stuff
-		//
-
-		if (windowStuff.input.keyBoard[Button::A].pressed 
-			&& windowStuff.input.keyBoard[Button::A].altWasDown)
+		//todo deltaTime
+		if (!gameplayFrame(augmentedDeltaTime, width, height, windowStuff.input))
 		{
-			std::cout << "Pressed! + Alt\n";
+			windowStuff.running = false;
 		}
-
-		//if(windowStuff.input.lMouseButton.pressed)
-		//{
-		//	std::cout << "Pressed!\n";
-		//}
-
-		//std::cout << (int)windowStuff.input.keyBoard[Button::A].held << "\n";
-
-		//std::cout << (int)windowStuff.input.focused << "\n";
-
-		//std::cout << windowStuff.input.cursorX << " " << windowStuff.input.cursorY << "\n";
-
-		std::cout << windowStuff.input.typedInput;
-
-		//if (windowStuff.input.keyBoard[Button::A].released)
-		//{
-		//	std::cout << "Released!\n";
-		//}
-		//
 
 		processInputAfter(windowStuff.input);
 	}
 
+	closeGameLogic();
 
 
 	return 0;

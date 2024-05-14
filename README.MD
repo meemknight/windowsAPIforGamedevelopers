@@ -55,7 +55,7 @@ Table of content
 
 - [x] [day 11](https://youtu.be/zsypxgOw47Q) - Opening a window
 - [x] [day 12](https://youtu.be/aSDbKwrOC90) - Window input part 1
-- [ ] Window input part 2
+- [x] [day 13](https://youtu.be/Un55e55M5tM) - Window input part 2
 - [ ] Separating the window code from the gameplay code (project structure).
 - [ ] Drawing with pixels
 - [ ] DeltaTime
