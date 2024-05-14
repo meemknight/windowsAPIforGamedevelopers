@@ -127,7 +127,7 @@ int main()
 
 #pragma endregion
 
-	initGameplay();
+	if (initGameplay()) { return 1; };
 
 	auto stop = std::chrono::high_resolution_clock::now();
 
@@ -136,9 +136,6 @@ int main()
 
 	#pragma region deltaTime
 
-		//long newTime = clock();
-		//float deltaTime = (float)(newTime - lastTime) / CLOCKS_PER_SEC;
-		//lastTime = clock();
 		auto start = std::chrono::high_resolution_clock::now();
 
 		float deltaTime = (std::chrono::duration_cast<std::chrono::microseconds>(start - stop)).count() / 1000000.0f;

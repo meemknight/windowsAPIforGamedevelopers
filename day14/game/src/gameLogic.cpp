@@ -41,11 +41,11 @@ bool gameplayFrame(float deltaTime, int w, int h, Input &input)
 	//game code and other stuff
 	//
 
-	if (input.keyBoard[Button::A].pressed
-		&& input.keyBoard[Button::A].altWasDown)
-	{
-		std::cout << "Pressed! + Alt\n";
-	}
+	//if (input.keyBoard[Button::A].pressed
+	//	&& input.keyBoard[Button::A].altWasDown)
+	//{
+	//	std::cout << "Pressed! + Alt\n";
+	//}
 
 	//if(input.lMouseButton.pressed)
 	//{
@@ -58,7 +58,7 @@ bool gameplayFrame(float deltaTime, int w, int h, Input &input)
 
 	//std::cout << input.cursorX << " " << input.cursorY << "\n";
 
-	std::cout << input.typedInput;
+	//std::cout << input.typedInput;
 
 	//if (input.keyBoard[Button::A].released)
 	//{
