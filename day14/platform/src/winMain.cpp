@@ -127,7 +127,7 @@ int main()
 
 #pragma endregion
 
-	if (initGameplay()) { return 1; };
+	if (!initGameplay()) { return 1; };
 
 	auto stop = std::chrono::high_resolution_clock::now();
 
@@ -249,7 +249,6 @@ int main()
 		int width = rect.right - rect.left;
 		int height = rect.bottom - rect.top;
 
-		//todo deltaTime
 		if (!gameplayFrame(augmentedDeltaTime, width, height, windowStuff.input))
 		{
 			windowStuff.running = false;

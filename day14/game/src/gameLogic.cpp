@@ -9,19 +9,16 @@ struct GameData
 	int fpsCounter = 0;
 	float timer = 0;
 };
-
 static GameData data;
-
 
 bool initGameplay()
 {
 	data = {};
-
 	return true;
 }
 
-
-bool gameplayFrame(float deltaTime, int w, int h, Input &input)
+bool gameplayFrame(float deltaTime, 
+	int w, int h, Input &input)
 {
 
 	//fps counter
@@ -35,44 +32,14 @@ bool gameplayFrame(float deltaTime, int w, int h, Input &input)
 		data.fpsCounter = 0;
 	}
 
-	//std::cout << deltaTime << '\n';
-	//std::cout << w << " " << h << '\n';
-
-	//game code and other stuff
-	//
-
-	//if (input.keyBoard[Button::A].pressed
-	//	&& input.keyBoard[Button::A].altWasDown)
-	//{
-	//	std::cout << "Pressed! + Alt\n";
-	//}
-
-	//if(input.lMouseButton.pressed)
-	//{
-	//	std::cout << "Pressed!\n";
-	//}
-
-	//std::cout << (int)input.keyBoard[Button::A].held << "\n";
-
-	//std::cout << (int)input.focused << "\n";
-
-	//std::cout << input.cursorX << " " << input.cursorY << "\n";
-
-	//std::cout << input.typedInput;
-
-	//if (input.keyBoard[Button::A].released)
-	//{
-	//	std::cout << "Released!\n";
-	//}
-	//
-
 	return true;
 }
 
-
-
 void closeGameLogic()
 {
-
 }
+
+
+
+
 
