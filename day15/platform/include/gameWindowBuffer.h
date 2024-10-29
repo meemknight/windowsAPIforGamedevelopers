@@ -4,11 +4,11 @@
 
 struct GameWindowBuffer
 {
-	char *memory = 0;
+	unsigned char *memory = 0;
 	int w = 0;
 	int h = 0;
 
-	void drawAtSafe(int x, int y, char r, char g, char b)
+	void drawAtSafe(int x, int y, unsigned char r, unsigned  char g, unsigned  char b)
 	{
 		if (x >= w || y >= h || x < 0 || y < 0)
 		{
@@ -21,7 +21,7 @@ struct GameWindowBuffer
 		memory[4 * (x + y * w) + 3] = 0; //reserved for alignment
 	}
 
-	void clear(char r = 0, char g = 0, char b = 0)
+	void clear(unsigned char r = 0, unsigned char g = 0, unsigned  char b = 0)
 	{
 		for (int y = 0; y < h; y++)
 			for (int x = 0; x < w; x++)

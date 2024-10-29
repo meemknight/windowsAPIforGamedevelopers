@@ -14,7 +14,7 @@ void resetWindowBuffer(GameWindowBuffer *gameWindowBuffer, BITMAPINFO *bitmapInf
 	}
 
 	gameWindowBuffer->memory =
-		(char *)VirtualAlloc(0, 4 * gameWindowBuffer->w * gameWindowBuffer->h,
+		(unsigned char *)VirtualAlloc(0, 4 * gameWindowBuffer->w * gameWindowBuffer->h,
 		MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
 
 	bitmapInfo->bmiHeader.biSize = sizeof(BITMAPINFO);
