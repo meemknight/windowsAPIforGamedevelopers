@@ -292,14 +292,6 @@ int main()
 
 	#pragma region draw
 
-		//RECT r;
-		//GetClientRect(wind, &r);
-		//int w = r.left;
-		//int h = r.bottom;
-		//HDC hdc = GetDC(wind);
-		//PatBlt(hdc, 0, 0, w, h, BLACKNESS);
-		//ReleaseDC(wind, hdc);
-
 		SendMessage(wind, WM_PAINT, 0, 0);
 
 	#pragma endregion
