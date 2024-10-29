@@ -47,7 +47,7 @@ bool gameplayFrame(float deltaTime,
 	for (int i = 0; i < gameWindowBuffer.w; i++)
 		for (int j = 0; j < gameWindowBuffer.h; j++)
 		{
-			gameWindowBuffer.drawAtSafe(i, j, i%255, j%255, (i*j)%255);
+			gameWindowBuffer.drawAtSafe(i, j, i%256, j%256, (i*j)%256);
 		}
 
 
