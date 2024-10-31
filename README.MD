@@ -57,7 +57,7 @@ Table of content
 - [x] [day 12](https://youtu.be/aSDbKwrOC90) - Window input part 1
 - [x] [day 13](https://youtu.be/Un55e55M5tM) - Window input part 2
 - [x] [day 14](https://youtu.be/id_xWalGulU) - Separating the window code from the gameplay code (project structure).
-- [ ] Drawing with pixels
+- [x] [day 15](https://youtu.be/Zp1SXzISgy4) - Drawing with pixels
 - [ ] DeltaTime
 - [ ] Various improvements and fixes
 - [ ] Drawing with OpenGL
