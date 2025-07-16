@@ -167,9 +167,11 @@ int main()
 	resetWindowBuffer(&windowStuff.gameWindowBuffer, &windowStuff.bitmapInfo, wind);
 
 #pragma region enable opengl
+
 	windowStuff.openglContext = enableOpenGL(wind);
 
 #pragma endregion
+
 
 #pragma endregion
 
@@ -306,6 +308,7 @@ int main()
 
 		if (windowStuff.drawWithOpenGL)
 		{
+			//draw with OpenGL.
 			HDC hdc = GetDC(wind);
 			SwapBuffers(hdc);
 			ReleaseDC(wind, hdc);
