@@ -58,7 +58,6 @@ Table of content
 - [x] [day 13](https://youtu.be/Un55e55M5tM) - Window input part 2
 - [x] [day 14](https://youtu.be/id_xWalGulU) - Separating the window code from the gameplay code (project structure).
 - [x] [day 15](https://youtu.be/Zp1SXzISgy4) - Drawing with pixels
-- [ ] Various improvements and fixes
 - [ ] Drawing with OpenGL
 - [ ] Creating a modern OpenGL context
 - [ ] Vsynk (Propperly implemented)
