@@ -5,7 +5,7 @@ HGLRC enableOpenGL(HWND hwnd)
 
 	PIXELFORMATDESCRIPTOR pfd = {};
 
-	int iFormat;
+	int iFormat = 0;
 
 	// get the device context (DC)
 	//Purpose: Represents a drawing surface, like a window or a printer.
