@@ -11,4 +11,6 @@ bool gameplayFrame(float deltaTime, int w, int h, Input &input,
 void closeGameLogic();
 
 
-
+void enableOpenGL();
+void enablePixelDrawing();
+bool &isOpenGLEnabled();

@@ -1,6 +1,7 @@
 #include <gameLogic.h>
 #include <iostream>
 #include <Windows.h>
+#include <gl/GL.h>
 
 struct GameData 
 {
@@ -32,6 +33,12 @@ bool gameplayFrame(float deltaTime,
 		data.fpsCounter = 0;
 	}
 
+	if (input.keyBoard[Button::P].pressed)
+	{
+		isOpenGLEnabled() = !isOpenGLEnabled();
+	}
+
+
 	//clear screen
 	gameWindowBuffer.clear();
 
@@ -49,6 +56,23 @@ bool gameplayFrame(float deltaTime,
 		{
 			gameWindowBuffer.drawAtSafe(i, j, i%256, j%256, (i*j)%256);
 		}
+
+
+	//opengl
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	//basic triangle
+	glBegin(GL_TRIANGLES);
+		glColor3f(1.0f, 0.0f, 0.0f); // Red
+		glVertex2f(-0.5f, -0.5f);
+
+		glColor3f(0.0f, 1.0f, 0.0f); // Green
+		glVertex2f(0.5f, -0.5f);
+
+		glColor3f(0.0f, 0.0f, 1.0f); // Blue
+		glVertex2f(0.0f, 0.5f);
+	glEnd();
+
 
 
 
