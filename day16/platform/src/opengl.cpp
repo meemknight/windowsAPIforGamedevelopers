@@ -1,5 +1,8 @@
 #include <opengl.h>
 
+//link opengl if using visual studio
+//#pragma comment(lib, "opengl32.lib")
+
 HGLRC enableOpenGL(HWND hwnd)
 {
 
@@ -21,7 +24,7 @@ HGLRC enableOpenGL(HWND hwnd)
 	pfd.cDepthBits = 24;
 	pfd.cStencilBits = 8;
 	pfd.iLayerType = PFD_MAIN_PLANE;
-
+	
 	int iFormat = ChoosePixelFormat(hDC, &pfd);
 
 	SetPixelFormat(hDC, iFormat, &pfd);
