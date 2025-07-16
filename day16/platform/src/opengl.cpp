@@ -5,7 +5,6 @@ HGLRC enableOpenGL(HWND hwnd)
 
 	PIXELFORMATDESCRIPTOR pfd = {};
 
-	int iFormat = 0;
 
 	// get the device context (DC)
 	//Purpose: Represents a drawing surface, like a window or a printer.
@@ -23,7 +22,7 @@ HGLRC enableOpenGL(HWND hwnd)
 	pfd.cStencilBits = 8;
 	pfd.iLayerType = PFD_MAIN_PLANE;
 
-	iFormat = ChoosePixelFormat(hDC, &pfd);
+	int iFormat = ChoosePixelFormat(hDC, &pfd);
 
 	SetPixelFormat(hDC, iFormat, &pfd);
 
