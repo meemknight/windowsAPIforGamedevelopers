@@ -3,14 +3,14 @@
 HGLRC enableOpenGL(HWND hwnd)
 {
 
-	PIXELFORMATDESCRIPTOR pfd = {};
-
 
 	// get the device context (DC)
 	//Purpose: Represents a drawing surface, like a window or a printer.
 	// It links GDI or OpenGL with the actual output device (monitor in this case).
 	HDC hDC = GetDC(hwnd);
 
+	
+	PIXELFORMATDESCRIPTOR pfd = {};
 
 	pfd.nSize = sizeof(pfd);
 	pfd.nVersion = 1;
@@ -18,7 +18,7 @@ HGLRC enableOpenGL(HWND hwnd)
 		PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER;
 	pfd.iPixelType = PFD_TYPE_RGBA;
 	pfd.cColorBits = 32;
-	pfd.cDepthBits = 16;
+	pfd.cDepthBits = 24;
 	pfd.cStencilBits = 8;
 	pfd.iLayerType = PFD_MAIN_PLANE;
 
