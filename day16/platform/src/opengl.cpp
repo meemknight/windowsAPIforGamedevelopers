@@ -38,3 +38,9 @@ HGLRC enableOpenGL(HWND hwnd)
 
 	return hRC;
 }
+
+
+
+
+
+
