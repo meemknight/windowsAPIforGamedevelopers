@@ -59,7 +59,7 @@ Table of content
 - [x] [day 14](https://youtu.be/id_xWalGulU) - Separating the window code from the gameplay code (project structure).
 - [x] [day 15](https://youtu.be/Zp1SXzISgy4) - Drawing with pixels
 - [x] [day 16](https://youtu.be/_P_69sQgEsY) - Drawing with OpenGL
-- [ ] Creating a modern OpenGL context
+- [x] [day 17](https://youtu.be/WPH6-CIKtE8) - Creating a modern OpenGL context
 - [ ] Vsynk (Propperly implemented)
 - [ ] Finishing the window code
 
